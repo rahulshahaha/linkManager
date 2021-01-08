@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+svg{
+  @apply h-24 text-gray-400
+}
+
+html{
+  @apply bg-gray-700
+}
+
+@tailwind utilities;
