@@ -26,16 +26,16 @@ const Workspace = (props) => {
   return ( 
     <div>
       <div className="flex space-x-5">
-        <Link to="/" className="text-center text-xl text-white bg-gray-400 px-3 py-2 rounded-lg">Go Back</Link>
-        <p onClick={openAll} className="cursor-pointer text-center text-xl text-white bg-gray-400 px-3 py-2 rounded-lg">Open all</p>
+        <Link to="/" className="text-center text-xl text-white bg-gray-300 px-3 py-2 rounded-lg">Go Back</Link>
+        <p onClick={openAll} className="cursor-pointer text-center text-xl text-white bg-gray-300 px-3 py-2 rounded-lg">Open all</p>
       </div>
-      <div className="grid grid-cols-4 mt-14">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 mt-14">
         { workspace.links.map(link => {
           return (
-            <a rel="noreferrer" href={link.url} target="_blank" key={link.name} className="bg-gray-400 w-60 h-60 rounded-full flex flex-col justify-center content-center transform hover:scale-105 transition ease-out duration-300">
-              <p className="flex-shrink text-center text-2xl text-white font-bold">{link.name}</p>
+            <a rel="noreferrer" href={link.url} target="_blank" key={link.name} className="mb-10 bg-gray-300 w-60 h-60 rounded-full justify-self-center flex flex-col justify-center content-center transform hover:scale-105 transition ease-out duration-300">
+              <p className="flex-shrink text-center text-2xl text-gray-700 font-bold">{link.name}</p>
               { link.logo ? 
-                <img src={link.logo} alt="" className="self-center h-14 w-14 mt-5"></img>
+                <img src={link.logo} alt="" className={link.name === '' ? 'self-center mt-5 h-36 w-36' : 'self-center mt-5 h-14 w-14'}></img>
               :
               null
               }

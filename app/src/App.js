@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="App m-20">
+    <div className="App md:m-20">
       <AppProvider>
         <BrowserRouter>
           <Switch>
