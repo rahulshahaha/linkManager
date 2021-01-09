@@ -12,6 +12,7 @@ const Workspace = (props) => {
   var workspace = workspaces.filter(ws => {return ws.name === workspaceName})
 
   const handleEvent = (event) => {
+    console.log(event)
     if(event.metaKey === true){
       if(event.code.substring(0,5) === "Digit"){
         const index = parseInt(event.code.substring(5,6)) - 1;

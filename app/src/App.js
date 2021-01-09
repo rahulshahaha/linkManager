@@ -15,9 +15,9 @@ function App(props) {
         <BrowserRouter>
           <KeyListener />
           <Switch>
-            <Route exact path='/' component={WorkspaceList} />
+            <Route exact path='/linkmanager' component={WorkspaceList} />
             <Route exact path='/:workspace' component={Workspace} />
-            <Route path='/'> <Redirect to="/" /> </Route>
+            <Route path='/linkmanager'> <Redirect to="/linkmanager" /> </Route>
           </Switch>
         </BrowserRouter>
       </AppProvider>
