@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
 
-svg{
+.wsList svg{
   @apply h-24 text-gray-400
+}
+
+.ws svg{
+  @apply h-14 text-gray-400
 }
 
 html{

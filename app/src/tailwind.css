@@ -579,8 +579,14 @@ video {
   }
 }
 
-svg{
+.wsList svg{
   height: 6rem;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity))
+}
+
+.ws svg{
+  height: 3.5rem;
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity))
 }
