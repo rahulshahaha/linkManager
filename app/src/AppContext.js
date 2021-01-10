@@ -16,7 +16,8 @@ export const AppProvider = ({ children }) => {
         {id:3,name: 'Tailwind', 'url':'https://tailwindcss.com/docs/installation#using-tailwind-without-post-css', 'logo':'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'},
         {id:4,name: 'Firebase Docs', 'url':'https://firebase.google.com/docs/guides',logo:'https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg'},
         {id:5,name: 'HeroIcons', 'url':'https://heroicons.com/',logo:'https://i.pinimg.com/originals/5e/f4/a4/5ef4a4e7313a941dda3034594220c1c0.png'},
-        {id:6,name: 'GitHub', url: 'https://github.com/rahulshahaha/helpMeDoMoney', logo: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'}
+        {id:6,name: 'GitHub', url: 'https://github.com/rahulshahaha/helpMeDoMoney', logo: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'},
+        {id:6,name: 'Drive', url: 'https://drive.google.com/drive/folders/13i5LxMqVEhntqi5A3MNrOYwDAmOpayI7', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_of_Google_Drive.svg'}
       ],
       svg: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
