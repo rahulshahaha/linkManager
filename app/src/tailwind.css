@@ -585,7 +585,7 @@ video {
   color: rgba(156, 163, 175, var(--tw-text-opacity))
 }
 
-.ws svg{
+.wst svg{
   height: 3.5rem;
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity))

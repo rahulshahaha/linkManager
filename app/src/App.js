@@ -3,6 +3,7 @@ import Workspace from './Workspace'
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { AppProvider } from './AppContext';
 import KeyListener from './KeyListener';
+import WorkspaceToggle from './WorkspaceToggle';
 
 
 function App(props) {
@@ -14,6 +15,7 @@ function App(props) {
       <AppProvider>
         <HashRouter basename="/">
           <KeyListener />
+          <WorkspaceToggle />
           <Switch>
             <Route exact path='/' component={WorkspaceList} />
             <Route exact path='/:workspace' component={Workspace} />

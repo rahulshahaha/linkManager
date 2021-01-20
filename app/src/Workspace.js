@@ -47,17 +47,6 @@ const Workspace = (props) => {
 
   return ( 
     <div className="ws">
-      <div className='h-24'></div>
-      <div className="fixed top-10 h-24 flex space-x-5">
-        { workspaces.map(workspace => {
-          return(
-            <div key={workspace.id} className="text-center text-xl text-gray-700 bg-gray-300 px-3 py-2 rounded-lg">
-              <p>{workspace.id}</p>
-              { workspace.svg }
-            </div>
-          )
-        })}
-      </div>
       <div className="flex space-x-5">
         <Link to="/" className="text-center text-xl text-gray-700 bg-gray-300 px-3 py-2 rounded-lg">Go Back</Link>
         <p onClick={openAll} className="cursor-pointer text-center text-xl text-gray-700 bg-gray-300 px-3 py-2 rounded-lg">Open all</p>
