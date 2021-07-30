@@ -27,10 +27,11 @@ export const AppProvider = ({ children }) => {
       id: 2,
       name: 'Finance',
       links:[
-        {id:1,name: '', 'url':'https://invest.ameritrade.com/grid/p/site#r=positions','logo':'https://upload.wikimedia.org/wikipedia/commons/c/ca/TD_Ameritrade.svg'},
+        {id:1,name: '', 'url':'https://auth.tdameritrade.com/auth?response_type=code&client_id=TDARETAILWEB%40AMER.OAUTHAP&redirect_uri=https%3A%2F%2Finvest.ameritrade.com%2Fgrid%2Fm%2Fcafelogin&cv=default&lang=en-us&state=ldl%253Dmain%253Apositions&code_challenge=b9PRiWuCp8r3XsqwBlAADBYa6fk_DpmQN10vWtJJ8eM&code_challenge_method=S256&exp=1626201128056','logo':'https://upload.wikimedia.org/wikipedia/commons/c/ca/TD_Ameritrade.svg'},
         {id:2,name:'','url':'https://app.youneedabudget.com/','logo':'https://upload.wikimedia.org/wikipedia/commons/d/d4/YNAB_logo.svg'},
-        {id:3,name:' ','url':'https://docs.google.com/spreadsheets/d/1rFL6bEQB9lUF8tZFK08uBcRrElndbwG2dqf5gNWjaz4/edit#gid=1081470965','logo':'https://upload.wikimedia.org/wikipedia/commons/0/08/Google_Sheets_logo.svg'},
-        {id:4,name:' ',url:'https://secure03b.chase.com/web/auth/dashboard#/dashboard/overviewAccounts/overview/multiProduct',logo:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0t7Bc5xMNnXt7hiFoYgeRfq9moNx82oFBQ&usqp=CAU'}
+        {id:3,name:' ','url':'https://docs.google.com/spreadsheets/d/1rFL6bEQB9lUF8tZFK08uBcRrElndbwG2dqf5gNWjaz4/edit#gid=1081470965','logo':'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/440px-Google_Sheets_2020_Logo.svg.png'},
+        {id:4,name:' ',url:'https://secure03b.chase.com/web/auth/dashboard#/dashboard/overviewAccounts/overview/multiProduct',logo:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0t7Bc5xMNnXt7hiFoYgeRfq9moNx82oFBQ&usqp=CAU'},
+        {id:5,name:' ',url:'https://portal.discover.com/customersvcs/portal/summary',logo:'https://iconape.com/wp-content/files/nv/181206/png/181206.png'}
       ],
       svg: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
