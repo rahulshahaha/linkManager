@@ -19,6 +19,11 @@ const KeyListener = (props) => {
         history.push(redir)
 
       }
+      if(event.code === "Digit3"){
+        const redir = '/' + workspaces[2].name
+        history.push(redir)
+
+      }
       if(event.code === "Backquote"){
         const redir = '/'
         history.push(redir)

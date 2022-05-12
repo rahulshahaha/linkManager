@@ -45,6 +45,8 @@ const Workspace = (props) => {
     })
   }
 
+  const logoPrefix = 'https://logo.clearbit.com/'
+
   return ( 
     <div className="ws">
       <div className="flex space-x-5">
@@ -53,12 +55,14 @@ const Workspace = (props) => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 mt-14">
         { workspace.links.map(link => {
+          const logoURL = link.directLogo ? link.logo : logoPrefix + link.logo
+          console.log(logoURL)
           return (
             <a rel="noreferrer" href={link.url} target="_blank" key={link.id} className="mb-10 bg-gray-300 w-60 h-60 rounded-full justify-self-center flex flex-col justify-center content-center transform hover:scale-105 transition ease-out duration-300">
               <p className="flex-shrink text-center text-md text-gray-700 font-bold">{link.id}</p>
               <p className="flex-shrink text-center text-2xl text-gray-700 font-bold">{link.name}</p>
               { link.logo ? 
-                <img src={link.logo} alt="" className={link.name === '' ? 'self-center mt-5 h-36 w-36' : 'self-center mt-5 h-14 w-14'}></img>
+                <img src={logoURL} alt="" className={link.name === '' ? 'self-center mt-5 max-h-20' : 'self-center mt-5 h-14 w-14'}></img>
               :
               null
               }
