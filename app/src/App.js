@@ -1,9 +1,9 @@
-import WorkspaceList from './WorkspaceList';
-import Workspace from './Workspace'
+import WorkspaceList from './components/WorkspaceList';
+import Workspace from './components/Workspace'
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
-import { AppProvider } from './AppContext';
-import KeyListener from './KeyListener';
-import WorkspaceToggle from './WorkspaceToggle';
+import KeyListener from './components/KeyListener';
+import WorkspaceToggle from './components/WorkspaceToggle';
+import { UserProvider } from './store/contexts/userContext'
 
 
 function App(props) {
@@ -12,7 +12,7 @@ function App(props) {
 
   return (
     <div className="App md:m-20">
-      <AppProvider>
+      <UserProvider>
         <HashRouter basename="/">
           <KeyListener />
           <WorkspaceToggle />
@@ -22,7 +22,7 @@ function App(props) {
             <Route path='/'> <Redirect to="/" /> </Route>
           </Switch>
         </HashRouter>
-      </AppProvider>
+      </UserProvider>
     </div>
   );
 }

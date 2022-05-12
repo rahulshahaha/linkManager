@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from 'react'
-import { AppContext } from './AppContext';
 import { Redirect, Link } from 'react-router-dom'
-
+import { UserContext } from '../store/contexts/userContext';
 
 const Workspace = (props) => {
 
-  const { workspaces } = useContext(AppContext)
+  const { user } = useContext(UserContext)
+  const workspaces = user ? user.workspaces : []
+  
 
   const workspaceName = props.match.params.workspace
 
@@ -56,7 +57,6 @@ const Workspace = (props) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 mt-14">
         { workspace.links.map(link => {
           const logoURL = link.directLogo ? link.logo : logoPrefix + link.logo
-          console.log(logoURL)
           return (
             <a rel="noreferrer" href={link.url} target="_blank" key={link.id} className="mb-10 bg-gray-300 w-60 h-60 rounded-full justify-self-center flex flex-col justify-center content-center transform hover:scale-105 transition ease-out duration-300">
               <p className="flex-shrink text-center text-md text-gray-700 font-bold">{link.id}</p>
