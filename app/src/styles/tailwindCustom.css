@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wsList svg{
+  @apply h-24 text-gray-400
+}
+
+.wst svg{
+  @apply h-14 text-gray-400
+}
+
+html{
+  @apply bg-gray-700
+}
+
+.formInput{
+  @apply rounded-lg px-3 py-1 border-2 border-black focus:outline-none;
+}
+
+.btn{
+  @apply bg-gray-200 rounded-md px-5;
+  /* min-height: 2rem; */
+}
+
+.importantBtn{
+  @apply bg-red-200 rounded-md px-5;
+  /* min-height: 2rem; */
+}
